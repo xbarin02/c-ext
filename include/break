@@ -24,36 +24,6 @@ static void *_1 = 0, *_2 = 0, *_3 = 0, *_4 = 0,
 	else \
 		for
 
-#define do \
-	for(void *_ = 0, *_9 = _8, *_8 = _7, *_7 = _6, *_6 = _5, \
-		*_5 = _4, *_4 = _3, *_3 = _2, *_2 = _1, \
-		*_1 = &&_EXPAND(_DEFER(_LABEL)(__LINE__)), *_0 = _1; !_; _=_1) \
-	if(0) { _EXPAND(_DEFER(_LABEL)(__LINE__)):; \
-		(void)_0; (void)_1; (void)_2; (void)_3; (void)_4; \
-		(void)_5; (void)_6; (void)_7; (void)_8; (void)_9; } \
-	else \
-		do
-
-#define while \
-	for(void *_ = 0, *_9 = _8, *_8 = _7, *_7 = _6, *_6 = _5, \
-		*_5 = _4, *_4 = _3, *_3 = _2, *_2 = _1, \
-		*_1 = &&_EXPAND(_DEFER(_LABEL)(__LINE__)), *_0 = _1; !_; _=_1) \
-	if(0) { _EXPAND(_DEFER(_LABEL)(__LINE__)):; \
-		(void)_0; (void)_1; (void)_2; (void)_3; (void)_4; \
-		(void)_5; (void)_6; (void)_7; (void)_8; (void)_9; } \
-	else \
-		while
-
-#define switch \
-	for(void *_ = 0, *_9 = _8, *_8 = _7, *_7 = _6, *_6 = _5, \
-		*_5 = _4, *_4 = _3, *_3 = _2, *_2 = _1, \
-		*_1 = &&_EXPAND(_DEFER(_LABEL)(__LINE__)), *_0 = _1; !_; _=_1) \
-	if(0) { _EXPAND(_DEFER(_LABEL)(__LINE__)):; \
-		(void)_0; (void)_1; (void)_2; (void)_3; (void)_4; \
-		(void)_5; (void)_6; (void)_7; (void)_8; (void)_9; } \
-	else \
-		switch
-
 #pragma GCC pop_options
 
 /**
