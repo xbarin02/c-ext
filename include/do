@@ -1,0 +1,9 @@
+#ifndef _DO
+#define _DO
+
+#define do(cond) \
+	for(int _ = 1; _; ) \
+		for(cond; _; _ = 0) \
+			do
+
+#endif
