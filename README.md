@@ -4,6 +4,7 @@ C/C++ language extensions.
 
 ## Some examples
 
+Breaking multiple nested loops:
 ```
 #include <break>
 
@@ -17,12 +18,12 @@ for(int i = 0; i < 100; i++) {
 }
 ```
 
-or
+Declarations in the do-while statement:
 
 ```
 #include <do>
 
-do(Packet packet = getPacket()) {
+do( Packet packet = getPacket() ) {
     processPacket(packet);
 } while( ++packet );
 
