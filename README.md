@@ -2,7 +2,7 @@
 
 C/C++ language extensions.
 
-## Some example
+## Some examples
 
 ```
 #include <break>
@@ -15,4 +15,15 @@ for(int i = 0; i < 100; i++) {
         }
     }
 }
+```
+
+or
+
+```
+#include <do>
+
+do(Packet packet = getPacket()) {
+    processPacket(packet);
+} while( ++packet );
+
 ```
